@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <!-- <VuexDemo /> -->
+    <V2 />
+    <!-- <OptionApi />
+    <CompositionApi /> -->
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import V2 from "@/components/v2/App.vue"; // @ is an alias to /src
+import OptionApi from "@/components/OptionApi.vue"; // @ is an alias to /src
+import CompositionApi from "@/components/CompositionApi.vue"; // @ is an alias to /src
+import VuexDemo from "@/components/VuexDemo.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
-    HelloWorld,
+    // OptionApi,
+    // CompositionApi,
+    V2,
+    // VuexDemo,
   },
 });
 </script>
